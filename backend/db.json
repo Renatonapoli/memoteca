@@ -3,8 +3,8 @@
     {
       "id": 1,
       "conteudo": "Que bom que você veio",
-      "autoria": "Renato",
-      "modelo": "modelo1"
+      "autoria": "Renato dev",
+      "modelo": "modelo2"
     },
     {
       "id": 2,
@@ -17,12 +17,6 @@
       "conteudo": "Angular é o melhor framework para frontend",
       "autoria": "Joana",
       "modelo": "modelo3"
-    },
-    {
-      "conteudo": "Aprendendo Angular 15",
-      "autoria": "Renato",
-      "modelo": "modelo3",
-      "id": 3
     },
     {
       "conteudo": "Aprendendo Angular 14",
