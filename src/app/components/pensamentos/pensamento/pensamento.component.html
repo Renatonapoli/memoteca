@@ -2,7 +2,10 @@
   	<img src="/assets/imagens-angular/{{ pensamento.modelo }}.png" alt="Aspas colorida">
     <p class="conteudo">{{ pensamento.conteudo }}</p>
     <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
-    <div>
+    <div class="botoes">
+      <button class="botao-favorito" (click)="atualizarFavoritos()">
+        <img src="/assets/imagens-angular/icone-favorito-{{ mudarIconeFavorito() }}.png" alt="Ícone favorito {{ mudarIconeFavorito() }}.png">
+      </button>
       <button class="botao-editar" routerLink="/pensamento/editar-pensamento/{{pensamento.id}}">
         <img src="/assets/imagens-angular/icone-editar.png" alt="ícone editar">
       </button>
