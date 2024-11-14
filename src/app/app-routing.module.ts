@@ -8,7 +8,7 @@ import { EditarPensamentoComponent } from './components/pensamentos/editar-pensa
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'listar-pensamento',
+    redirectTo: 'listar-pensamentos',
     pathMatch: 'full'
 
   },
