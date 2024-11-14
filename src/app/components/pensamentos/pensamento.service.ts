@@ -9,14 +9,15 @@ import { Observable } from 'rxjs';
 export class PensamentoService {
 
   private readonly API = "http://localhost:3000/pensamentos"
-  itemsPorPagina: number = 6
 
   constructor(private http: HttpClient) {    }
 
   listar(pagina: number): Observable<Pensamento[]> {
+    const itemsPorPagina = 6
+
     let params = new HttpParams()
-      .set('_pagina', pagina)
-      .set('_limit', this.itemsPorPagina)
+      .set('_page', pagina)
+      .set('_limit', itemsPorPagina)
 
     return this.http.get<Pensamento[]>(this.API, { params })
   }
